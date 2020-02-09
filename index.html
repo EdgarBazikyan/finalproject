@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        h1 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif !important;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <h1>Ծրագրավորում III Երևան</h1>
+            </tr>
+            <tr>
+                <h1>Էդգար Բազիկյան</h1>
+            </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Գույն</th>
+                <th scope="col">Նկարագրություն</th>
+                <th scope="col">Ծնվել է</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td scope="row" style="background-color:green;"></td>
+                <td>Կանաչը խոտն է, որը բազմանում է 4 ցիկլը մեկ,մահանում է երբ նրան ուտում է խոտակերը</td>
+                <td id="grassCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:orange;"></td>
+                <td>Դեղինը խոտակերն է,բազմանում է երբ կյանքը դառնում է 5 և մահանում է երբ կյանքը դառնում է 5, կամ
+                    երբ նրան ուտում է գիշատիչը:</td>
+                <td id="grassEaterCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="row" style="background-color:red;"></td>
+                <td>Կարմիրը գիշատիչն է,բազմանում է երբ կյանքը դառնում է 6 և մահանում է երբ կյանքը դառնում է 0, կամ
+                    երբ նրան ուտում է մարդը, մարդակեռը կամ պանտեռան:</td>
+                <td id="predatorCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td scope="row" style="background-color:#e6b591;"></td>
+                <td>Մաշկագույնը մարդն  է, որը բազմանում է երբ կյանքը դառնում է 4 և մահանում է երբ կյանքը դառնում է 0, կամ
+                    երբ նրան ուտում է կամ, մարդակեռը կամ, պանտեռան:</td>
+                <td id="menCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td scope="row" style="background-color:#2200ff;"></td>
+                <td>Կապույտը մարդակերն է, որը բազմանում է երբ կյանքը դառնում է 5 և մահանում է երբ կյանքը դառնում է 0, կամ
+                    երբ նրան ուտում է  պանտեռան:</td>
+                <td id="menEaterCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td scope="row" style="background-color:black;"></td>
+                <td>Սևը պանտեռան է,  որը բազմանում է երբ կյանքը դառնում է 5 և մահանում է երբ կյանքը դառնում է 0:</td>
+                <td id="panteraCount"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="p5.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
